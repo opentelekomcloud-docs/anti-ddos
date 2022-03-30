@@ -24,8 +24,8 @@ html_theme_options = {
     "sidebar_mode": "toctree"
 }
 otcdocs_auto_name = False
-project = 'Dummy Service'  # FIXME
-otcdocs_repo_name = 'opentelekomcloud-docs/template'  # FIXME
+project = 'Anti DDoS Service'
+otcdocs_repo_name = 'opentelekomcloud-docs/anti-ddos'
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -156,11 +156,11 @@ pygments_style = 'native'
 # html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'dummydoc'  # FIXME
+htmlhelp_basename = 'antiddosdoc'
 
 latex_documents = [
     ('index',
-     'api-ref-dummy.tex',  # FIXME
+     'api-ref-anti-ddos.tex',
      u'%s API Reference' % project,
      u'OpenTelekomCloud', 'manual'),
 ]
