@@ -18,7 +18,6 @@ extensions = [
     'otcdocstheme'
 ]
 
-
 html_theme = 'otcdocs'
 html_theme_options = {
     "sidebar_mode": "toctree"
@@ -26,7 +25,6 @@ html_theme_options = {
 otcdocs_auto_name = False
 project = 'Anti DDoS Service'
 otcdocs_repo_name = 'opentelekomcloud-docs/anti-ddos'
-
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -79,8 +77,6 @@ add_module_names = False
 # output. They are ignored by default.
 show_authors = False
 
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'native'
 
 # -- Options for man page output ----------------------------------------------
 
