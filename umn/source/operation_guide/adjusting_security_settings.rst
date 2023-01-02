@@ -31,7 +31,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0217719114.png
       :alt: **Figure 1** Public IP address list
 
-
       **Figure 1** Public IP address list
 
 #. In the displayed **Set Protection** dialog box, set required parameters, as shown in :ref:`Figure 2 <en-us_topic_0204851517__fig415543111219>`.
@@ -40,7 +39,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0248191753.png
       :alt: **Figure 2** Page for setting protection parameters
-
 
       **Figure 2** Page for setting protection parameters
 

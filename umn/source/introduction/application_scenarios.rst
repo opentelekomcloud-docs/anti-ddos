@@ -16,5 +16,4 @@ The detection center detects network access traffic according to user-configured
 .. figure:: /_static/images/en-us_image_0204851523.png
    :alt: **Figure 1** Network topology
 
-
    **Figure 1** Network topology
