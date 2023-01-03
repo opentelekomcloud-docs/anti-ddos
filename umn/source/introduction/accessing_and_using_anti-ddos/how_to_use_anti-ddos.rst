@@ -17,7 +17,6 @@ Description:
       .. figure:: /_static/images/en-us_image_0258870399.png
          :alt: **Figure 1** Setting the default protection policy
 
-
          **Figure 1** Setting the default protection policy
 
    -  If you do not set a default protection policy for the newly purchased public IP addresses, the **Protection Settings** in **Default** mode apply to the IP addresses, as shown in :ref:`Figure 2 <en-us_topic_0204851524__fig1187371918561>`.
@@ -32,7 +31,6 @@ Description:
 
       .. figure:: /_static/images/en-us_image_0258875446.png
          :alt: **Figure 2** Default protection settings
-
 
          **Figure 2** Default protection settings
 

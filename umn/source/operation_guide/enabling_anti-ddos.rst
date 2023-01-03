@@ -34,7 +34,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0217500718.png
       :alt: **Figure 1** Public IP Addresses
 
-
       **Figure 1** Public IP Addresses
 
 #. In the displayed **Enable Anti-DDoS** dialog box, click **Yes**.
@@ -42,7 +41,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0217500934.png
       :alt: **Figure 2** Enabling Anti-DDoS
-
 
       **Figure 2** Enabling Anti-DDoS
 

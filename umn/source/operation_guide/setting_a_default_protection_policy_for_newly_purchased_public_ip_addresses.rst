@@ -27,7 +27,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0258795362.png
       :alt: **Figure 1** Setting a default protection policy for newly purchased public ip addresses
 
-
       **Figure 1** Setting a default protection policy for newly purchased public ip addresses
 
 #. Configure the default protection policy.
@@ -35,7 +34,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0258829059.png
       :alt: **Figure 2** Configuring the default protection policy
-
 
       **Figure 2** Configuring the default protection policy
 

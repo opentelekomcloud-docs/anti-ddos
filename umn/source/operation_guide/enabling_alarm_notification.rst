@@ -30,7 +30,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0217501082.png
       :alt: **Figure 1** Configuring alarm notifications
 
-
       **Figure 1** Configuring alarm notifications
 
    .. table:: **Table 1** Parameter description

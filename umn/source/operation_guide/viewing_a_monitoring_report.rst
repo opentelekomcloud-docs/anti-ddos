@@ -31,7 +31,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0217719594.png
       :alt: **Figure 1** Viewing a monitoring report
 
-
       **Figure 1** Viewing a monitoring report
 
 #. On the **Monitoring Report** page, view monitoring details about a public IP address.
@@ -47,7 +46,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0217782662.png
       :alt: **Figure 2** Monitoring report
-
 
       **Figure 2** Monitoring report
 

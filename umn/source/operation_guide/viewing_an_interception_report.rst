@@ -33,7 +33,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0217727368.png
       :alt: **Figure 1** Interception report
 
-
       **Figure 1** Interception report
 
    .. note::
