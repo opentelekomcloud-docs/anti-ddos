@@ -30,20 +30,22 @@ Request
 
 -  Parameter description
 
-   ============ ========= =================== =============================
-   Parameter    Mandatory Type                Description
-   ============ ========= =================== =============================
-   warn_config  Yes       List data structure Alarm configuration
-   topic_urn    Yes       String              ID of an alarm group
-   display_name Yes       String              Description of an alarm group
-   ============ ========= =================== =============================
+   +--------------+-----------+---------------------+---------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type                | Description                                                               |
+   +==============+===========+=====================+===========================================================================+
+   | warn_config  | Yes       | List data structure | Alarm configuration                                                       |
+   +--------------+-----------+---------------------+---------------------------------------------------------------------------+
+   | topic_urn    | Yes       | String              | ID of an alarm group                                                      |
+   +--------------+-----------+---------------------+---------------------------------------------------------------------------+
+   | display_name | Yes       | String              | Specifies the name of the SMN topic used for sending alarm notifications. |
+   +--------------+-----------+---------------------+---------------------------------------------------------------------------+
 
 -  Data structure description of **warn_config**
 
    +-----------------+-----------------+-----------------+----------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                    |
    +=================+=================+=================+================================================================+
-   | antiDDoS        | Yes             | Boolean         | DDoS attacks                                                   |
+   | antiDDoS        | No              | Boolean         | DDoS attacks                                                   |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------+
    | bruce_force     | No              | Boolean         | Brute force cracking (system logins, FTP, and DB)              |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------+
@@ -67,26 +69,47 @@ Request
 
       SFTP is more secure than FTP. To secure data transmission, use SFTP to transfer files.
 
+Response Message
+----------------
+
+========== ====== ==========================
+Parameter  Type   Description
+========== ====== ==========================
+error_code String Internal error code
+error_msg  String Internal error description
+task_id    String Task ID
+========== ====== ==========================
+
 Example
 -------
 
-Example request
+-  Example request
 
-.. code-block::
+   .. code-block::
 
-   {
-      "warn_config":    {
-         "antiDDoS": true,
-         "bruce_force": false,
-         "remote_login": false,
-         "weak_password": false,
-         "high_privilege": false,
-         "back_doors": false,
-         "waf": false
-      },
-      "topic_urn": "urn:smn:eu-de:67641fe6886f43fcb78edbbf0ad0b99f:test_soft",
-      "display_name": "group_1"
-   }
+      {
+         "warn_config":    {
+            "antiDDoS": true,
+            "bruce_force": false,
+            "remote_login": false,
+            "weak_password": false,
+            "high_privilege": false,
+            "back_doors": false,
+            "waf": false
+         },
+         "topic_urn": "urn:smn:eu-de:67641fe6886f43fcb78edbbf0ad0b99f:test_soft",
+         "display_name": "group_1"
+      }
+
+-  Example response
+
+   .. code-block::
+
+      {
+        "error_code" : "10000000",
+        "error_msg" : "Ok",
+        "task_id" : ""
+      }
 
 Status Code
 -----------
