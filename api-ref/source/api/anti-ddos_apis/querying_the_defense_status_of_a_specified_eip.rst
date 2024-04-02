@@ -44,7 +44,7 @@ Response
    | status          | Yes             | String          | Defense status, the possible value of which is one of the following: |
    |                 |                 |                 |                                                                      |
    |                 |                 |                 | -  **normal**: indicates that the defense status is normal.          |
-   |                 |                 |                 | -  **configging**: indicates that defense is being configured.       |
+   |                 |                 |                 | -  **configuring**: indicates that defense is being configured.      |
    |                 |                 |                 | -  **notConfig**: indicates that defense is not configured.          |
    |                 |                 |                 | -  **packetcleaning**: indicates that traffic cleaning is underway.  |
    |                 |                 |                 | -  **packetdropping**: indicates that traffic is discarded.          |

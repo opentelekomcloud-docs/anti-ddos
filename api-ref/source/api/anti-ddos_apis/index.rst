@@ -7,7 +7,6 @@ Anti-DDoS APIs
 
 -  :ref:`Querying Optional Anti-DDoS Defense Policies <antiddos_02_0017>`
 -  :ref:`Enabling Anti-DDoS <antiddos_02_0018>`
--  :ref:`Disabling Anti-DDoS <antiddos_02_0019>`
 -  :ref:`Querying Configured Anti-DDoS Defense Policies <antiddos_02_0020>`
 -  :ref:`Updating Anti-DDoS Defense Policies <antiddos_02_0021>`
 -  :ref:`Querying Anti-DDoS Tasks <antiddos_02_0022>`
@@ -27,7 +26,6 @@ Anti-DDoS APIs
 
    querying_optional_anti-ddos_defense_policies
    enabling_anti-ddos
-   disabling_anti-ddos
    querying_configured_anti-ddos_defense_policies
    updating_anti-ddos_defense_policies
    querying_anti-ddos_tasks

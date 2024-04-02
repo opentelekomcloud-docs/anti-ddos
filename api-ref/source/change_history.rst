@@ -8,6 +8,9 @@ Change History
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | Release Date                      | Description                                                                                                                  |
 +===================================+==============================================================================================================================+
+| 2024-03-29                        | -  Optimized the response parameters in section "Querying Alarm Configuration Information".                                  |
+|                                   | -  Added an example response in section "Updating Alarm Configuration Information".                                          |
++-----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | 2022-09-30                        | Updated examples in section "Querying the Default Protection Policy Configured for the Newly Purchased Public IP Addresses". |
 +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 | 2020-07-08                        | Added section "Querying the Default Protection Policy Configured for the Newly Purchased Public IP Addresses".               |
