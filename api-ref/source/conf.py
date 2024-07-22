@@ -24,7 +24,7 @@ extensions = [
 otcdocs_auto_name = False
 otcdocs_auto_version = False
 
-project = 'Anti DDoS'
+project = 'Anti-DDoS'
 otcdocs_repo_name = 'opentelekomcloud-docs/anti-ddos'
 # Those variables are required for edit/bug links
 
@@ -34,7 +34,7 @@ otcdocs_doc_link = '/anti-ddos/api-ref/'
 otcdocs_doc_title = 'API Reference'
 otcdocs_doc_type = 'api-ref'
 otcdocs_service_category = 'security-services'
-otcdocs_service_title = 'Anti DDoS'
+otcdocs_service_title = 'Anti-DDoS'
 otcdocs_service_type = 'antiddos'
 otcdocs_search_environment = 'hc_de'
 otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
@@ -92,7 +92,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Anti DDoS - API Reference"
+html_title = "Anti-DDoS - API Reference"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -107,6 +107,6 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'antiddos-api-ref.tex',
-     u'Anti DDoS - API Reference',
+     u'Anti-DDoS - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
