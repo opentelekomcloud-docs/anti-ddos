@@ -1,4 +1,4 @@
-Anti DDoS
+Anti-DDoS
 =========
 
 The Anti-DDoS traffic cleaning service (Anti-DDoS for short) is a network security service that defends IP addresses against distributed denial of service (DDoS) attacks.
