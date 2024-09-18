@@ -1,5 +1,5 @@
 ======================
-Anti DDoS - User Guide
+Anti-DDoS - User Guide
 ======================
 
 .. toctree::
