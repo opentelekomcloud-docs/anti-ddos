@@ -1,5 +1,5 @@
 =========================
-Anti DDoS - API Reference
+Anti-DDoS - API Reference
 =========================
 
 .. toctree::
