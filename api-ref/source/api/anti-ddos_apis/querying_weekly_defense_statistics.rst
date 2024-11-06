@@ -57,29 +57,25 @@ Response
 
 -  Data structure description of **weekdata**
 
-   +----------------------+-----------+--------------+--------------------------------------+
-   | Parameter            | Mandatory | Type         | Description                          |
-   +======================+===========+==============+======================================+
-   | ddos_intercept_times | Yes       | Integer      | Number of DDoS attacks blocked       |
-   +----------------------+-----------+--------------+--------------------------------------+
-   | ddos_blackhole_times | Yes       | Integer      | Number of DDoS black holes           |
-   +----------------------+-----------+--------------+--------------------------------------+
-   | max_attack_bps       | Yes       | Integer      | Maximum attack traffic               |
-   +----------------------+-----------+--------------+--------------------------------------+
-   | max_attack_conns     | Yes       | Integer      | Maximum number of attack connections |
-   +----------------------+-----------+--------------+--------------------------------------+
-   | period_start_date    | Yes       | Long integer | Start time                           |
-   +----------------------+-----------+--------------+--------------------------------------+
+   ==================== ============ ====================================
+   Parameter            Type         Description
+   ==================== ============ ====================================
+   ddos_intercept_times Integer      Number of DDoS attacks blocked
+   ddos_blackhole_times Integer      Number of DDoS black holes
+   max_attack_bps       Integer      Maximum attack traffic
+   max_attack_conns     Integer      Maximum number of attack connections
+   period_start_date    Long integer Start time
+   ==================== ============ ====================================
 
 -  Data structure description of **top10**
 
-   +---------------------+-----------+---------+-----------------------------------------------------------------------------------+
-   | Parameter           | Mandatory | Type    | Description                                                                       |
-   +=====================+===========+=========+===================================================================================+
-   | floating_ip_address | Yes       | String  | EIP                                                                               |
-   +---------------------+-----------+---------+-----------------------------------------------------------------------------------+
-   | times               | Yes       | Integer | Number of DDoS attacks intercepted, including cleaning operations and black holes |
-   +---------------------+-----------+---------+-----------------------------------------------------------------------------------+
+   +---------------------+---------+-----------------------------------------------------------------------------------+
+   | Parameter           | Type    | Description                                                                       |
+   +=====================+=========+===================================================================================+
+   | floating_ip_address | String  | EIP                                                                               |
+   +---------------------+---------+-----------------------------------------------------------------------------------+
+   | times               | Integer | Number of DDoS attacks intercepted, including cleaning operations and black holes |
+   +---------------------+---------+-----------------------------------------------------------------------------------+
 
 Example
 -------

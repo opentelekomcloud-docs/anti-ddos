@@ -37,49 +37,47 @@ Response
 
 -  Parameter description
 
-   +-------------------------+-----------+---------------------+------------------------------------------+
-   | Parameter               | Mandatory | Type                | Description                              |
-   +=========================+===========+=====================+==========================================+
-   | traffic_limited_list    | Yes       | List data structure | List of traffic limits                   |
-   +-------------------------+-----------+---------------------+------------------------------------------+
-   | http_limited_list       | Yes       | List data structure | List of HTTP limits                      |
-   +-------------------------+-----------+---------------------+------------------------------------------+
-   | connection_limited_list | Yes       | List data structure | List of limits of numbers of connections |
-   +-------------------------+-----------+---------------------+------------------------------------------+
+   +-------------------------+---------------------+------------------------------------------+
+   | Parameter               | Type                | Description                              |
+   +=========================+=====================+==========================================+
+   | traffic_limited_list    | List data structure | List of traffic limits                   |
+   +-------------------------+---------------------+------------------------------------------+
+   | http_limited_list       | List data structure | List of HTTP limits                      |
+   +-------------------------+---------------------+------------------------------------------+
+   | connection_limited_list | List data structure | List of limits of numbers of connections |
+   +-------------------------+---------------------+------------------------------------------+
 
 -  Data structure description of **traffic_limited_list**
 
-   +--------------------+-----------+---------+-------------------------------------------+
-   | Parameter          | Mandatory | Type    | Description                               |
-   +====================+===========+=========+===========================================+
-   | traffic_pos_id     | Yes       | Integer | Position ID of traffic                    |
-   +--------------------+-----------+---------+-------------------------------------------+
-   | traffic_per_second | Yes       | Integer | Threshold of traffic per second (Mbit/s)  |
-   +--------------------+-----------+---------+-------------------------------------------+
-   | packet_per_second  | Yes       | Integer | Threshold of number of packets per second |
-   +--------------------+-----------+---------+-------------------------------------------+
+   ================== ======= =========================================
+   Parameter          Type    Description
+   ================== ======= =========================================
+   traffic_pos_id     Integer Position ID of traffic
+   traffic_per_second Integer Threshold of traffic per second (Mbit/s)
+   packet_per_second  Integer Threshold of number of packets per second
+   ================== ======= =========================================
 
 -  Data structure description of **http_limited_list**
 
-   +------------------------+-----------+---------+-------------------------------------------------+
-   | Parameter              | Mandatory | Type    | Description                                     |
-   +========================+===========+=========+=================================================+
-   | http_request_pos_id    | Yes       | Integer | Position ID of number of HTTP requests          |
-   +------------------------+-----------+---------+-------------------------------------------------+
-   | http_packet_per_second | Yes       | Integer | Threshold of number of HTTP requests per second |
-   +------------------------+-----------+---------+-------------------------------------------------+
+   +------------------------+---------+-------------------------------------------------+
+   | Parameter              | Type    | Description                                     |
+   +========================+=========+=================================================+
+   | http_request_pos_id    | Integer | Position ID of number of HTTP requests          |
+   +------------------------+---------+-------------------------------------------------+
+   | http_packet_per_second | Integer | Threshold of number of HTTP requests per second |
+   +------------------------+---------+-------------------------------------------------+
 
 -  Data structure description of **connection_limited_list**
 
-   +--------------------------+-----------+---------+----------------------------------------------------+
-   | Parameter                | Mandatory | Type    | Description                                        |
-   +==========================+===========+=========+====================================================+
-   | cleaning_access_pos_id   | Yes       | Integer | Position ID of access limit during cleaning        |
-   +--------------------------+-----------+---------+----------------------------------------------------+
-   | new_connection_limited   | Yes       | Integer | Number of new connections of a source IP address   |
-   +--------------------------+-----------+---------+----------------------------------------------------+
-   | total_connection_limited | Yes       | Integer | Total number of connections of a source IP address |
-   +--------------------------+-----------+---------+----------------------------------------------------+
+   +--------------------------+---------+----------------------------------------------------+
+   | Parameter                | Type    | Description                                        |
+   +==========================+=========+====================================================+
+   | cleaning_access_pos_id   | Integer | Position ID of access limit during cleaning        |
+   +--------------------------+---------+----------------------------------------------------+
+   | new_connection_limited   | Integer | Number of new connections of a source IP address   |
+   +--------------------------+---------+----------------------------------------------------+
+   | total_connection_limited | Integer | Total number of connections of a source IP address |
+   +--------------------------+---------+----------------------------------------------------+
 
 Example
 -------

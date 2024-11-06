@@ -24,8 +24,8 @@ Request
 
 None
 
-Response
---------
+Response Messages
+-----------------
 
 -  Parameter description
 
@@ -55,12 +55,12 @@ Response
 
 -  Data structure description of **links**
 
-   ========= ========= ====== ============
-   Parameter Mandatory Type   Description
-   ========= ========= ====== ============
-   href      Yes       String URLs of APIs
-   rel       Yes       String self
-   ========= ========= ====== ============
+   ========= ====== ============
+   Parameter Type   Description
+   ========= ====== ============
+   href      String URLs of APIs
+   rel       String self
+   ========= ====== ============
 
 Example
 -------
