@@ -55,12 +55,12 @@ Response
 
 -  Data structure description of **links**
 
-   ========= ========= ====== ==============
-   Parameter Mandatory Type   Description
-   ========= ========= ====== ==============
-   href      Yes       String URL of the API
-   rel       Yes       String self
-   ========= ========= ====== ==============
+   ========= ====== ==============
+   Parameter Type   Description
+   ========= ====== ==============
+   href      String URL of the API
+   rel       String self
+   ========= ====== ==============
 
 Example
 -------

@@ -38,17 +38,17 @@ Response
 
 -  Parameter description
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                          |
-   +=================+=================+=================+======================================================================+
-   | status          | Yes             | String          | Defense status, the possible value of which is one of the following: |
-   |                 |                 |                 |                                                                      |
-   |                 |                 |                 | -  **normal**: indicates that the defense status is normal.          |
-   |                 |                 |                 | -  **configuring**: indicates that defense is being configured.      |
-   |                 |                 |                 | -  **notConfig**: indicates that defense is not configured.          |
-   |                 |                 |                 | -  **packetcleaning**: indicates that traffic cleaning is underway.  |
-   |                 |                 |                 | -  **packetdropping**: indicates that traffic is discarded.          |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------+
+   +-----------------------+-----------------------+----------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                          |
+   +=======================+=======================+======================================================================+
+   | status                | String                | Defense status, the possible value of which is one of the following: |
+   |                       |                       |                                                                      |
+   |                       |                       | -  **normal**: indicates that the defense status is normal.          |
+   |                       |                       | -  **configuring**: indicates that defense is being configured.      |
+   |                       |                       | -  **notConfig**: indicates that defense is not configured.          |
+   |                       |                       | -  **packetcleaning**: indicates that traffic cleaning is underway.  |
+   |                       |                       | -  **packetdropping**: indicates that traffic is discarded.          |
+   +-----------------------+-----------------------+----------------------------------------------------------------------+
 
 Example
 -------
