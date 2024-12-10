@@ -4,6 +4,10 @@
     default-branch: main
     templates:
       - helpcenter-base-jobs
+    vars:
+      sphinx_pdf_files:
+        - antiddos-umn.pdf
+        - antiddos-api-ref.pdf
     check:
       jobs:
         - noop
