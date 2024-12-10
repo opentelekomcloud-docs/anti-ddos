@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'antiddos-api-ref.tex',
-     u'Anti-DDoS - API Reference',
+    u'Anti-DDoS - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
