@@ -9,7 +9,7 @@ Anti-DDoS APIs
 -  :ref:`Querying Configured Anti-DDoS Defense Policies <antiddos_02_0020>`
 -  :ref:`Updating Anti-DDoS Defense Policies <antiddos_02_0021>`
 -  :ref:`Querying Anti-DDoS Tasks <antiddos_02_0022>`
--  :ref:`Querying the List of Defense Statuses of EIPs <antiddos_02_0023>`
+-  :ref:`Querying the List of EIP Defense Statuses <antiddos_02_0023>`
 -  :ref:`Querying the Defense Status of a Specified EIP <antiddos_02_0024>`
 -  :ref:`Querying the Traffic of a Specified EIP <antiddos_02_0025>`
 -  :ref:`Querying Events of a Specified EIP <antiddos_02_0026>`
@@ -27,7 +27,7 @@ Anti-DDoS APIs
    querying_configured_anti-ddos_defense_policies
    updating_anti-ddos_defense_policies
    querying_anti-ddos_tasks
-   querying_the_list_of_defense_statuses_of_eips
+   querying_the_list_of_eip_defense_statuses
    querying_the_defense_status_of_a_specified_eip
    querying_the_traffic_of_a_specified_eip
    querying_events_of_a_specified_eip

@@ -71,7 +71,7 @@ Example
 
    .. code-block:: text
 
-      POST /v1/67641fe6886f43fcb78edbbf0ad0b99f/antiddos/default/config
+      POST /v1/67641fe6886f43fcb78edbbf0ad0b99f/antiddos/default-config
 
    .. code-block::
 

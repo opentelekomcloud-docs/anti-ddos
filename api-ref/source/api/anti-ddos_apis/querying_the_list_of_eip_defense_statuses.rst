@@ -2,8 +2,8 @@
 
 .. _antiddos_02_0023:
 
-Querying the List of Defense Statuses of EIPs
-=============================================
+Querying the List of EIP Defense Statuses
+=========================================
 
 Functions
 ---------
@@ -68,34 +68,42 @@ Response
 
 -  Data structure description of **ddosStatus**
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                          |
-   +=======================+=======================+======================================================================+
-   | floating_ip_address   | String                | Floating IP address                                                  |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | floating_ip_id        | String                | ID of an EIP                                                         |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | network_type          | String                | EIP type. The value can be:                                          |
-   |                       |                       |                                                                      |
-   |                       |                       | -  **EIP**: EIP that is bound or not bound with ECS.                 |
-   |                       |                       | -  **ELB**: EIP that is bound with ELB.                              |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | status                | String                | Defense status, the possible value of which is one of the following: |
-   |                       |                       |                                                                      |
-   |                       |                       | -  **normal**: indicates that the defense status is normal.          |
-   |                       |                       | -  **configuring**: indicates that defense is being configured.      |
-   |                       |                       | -  **notConfig**: indicates that defense is not configured.          |
-   |                       |                       | -  **packetcleaning**: indicates that traffic cleaning is underway.  |
-   |                       |                       | -  **packetdropping**: indicates that traffic is discarded.          |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | blackhole_endtime     | Long                  | End time of a black hole                                             |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | protect_type          | String                | Protection type                                                      |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | traffic_threshold     | Long                  | Traffic threshold                                                    |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
-   | http_threshold        | Long                  | HTTP traffic threshold                                               |
-   +-----------------------+-----------------------+----------------------------------------------------------------------+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                           |
+   +=======================+=======================+=======================================================================================+
+   | floating_ip_address   | String                | Floating IP address                                                                   |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | floating_ip_id        | String                | ID of an EIP                                                                          |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | network_type          | String                | EIP type. The value can be:                                                           |
+   |                       |                       |                                                                                       |
+   |                       |                       | -  **EIP**: EIP that is bound or not bound with ECS.                                  |
+   |                       |                       | -  **ELB**: EIP that is bound with ELB.                                               |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | status                | String                | Defense status, the possible value of which is one of the following:                  |
+   |                       |                       |                                                                                       |
+   |                       |                       | -  **normal**: indicates that the defense status is normal.                           |
+   |                       |                       | -  **configuring**: indicates that defense is being configured.                       |
+   |                       |                       | -  **notConfig**: indicates that defense is not configured.                           |
+   |                       |                       | -  **packetcleaning**: indicates that traffic cleaning is underway.                   |
+   |                       |                       | -  **packetdropping**: indicates that traffic is discarded.                           |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | blackhole_endtime     | Long                  | End time of a black hole                                                              |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | protect_type          | String                | Protection type                                                                       |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | traffic_threshold     | Long                  | Traffic threshold                                                                     |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | http_threshold        | Long                  | HTTP traffic threshold                                                                |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | traffic_pos_id        | Long                  | Traffic triggering parameter                                                          |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | protect_capacity      | Long                  | Protection capacity. The value **0** indicates that protection is not supported.      |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | current_usage         | Long                  | Used protection capacity. The value **0** indicates that protection is not supported. |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
+   | enterprise_project_id | String                | Enterprise project ID                                                                 |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
 
 Example
 -------
