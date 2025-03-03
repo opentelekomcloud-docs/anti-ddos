@@ -61,7 +61,7 @@ Example
 
    .. code-block:: text
 
-      GET /v1/67641fe6886f43fcb78edbbf0ad0b99f/antiddos/default/config
+      GET /v1/67641fe6886f43fcb78edbbf0ad0b99f/antiddos/default-config
 
 -  Example response
 
