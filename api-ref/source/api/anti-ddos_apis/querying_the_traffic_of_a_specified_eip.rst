@@ -24,6 +24,7 @@ URI
    ============== ========= ====== =====================================
    project_id     Yes       String User ID
    floating_ip_id Yes       String ID corresponding to the EIP of a user
+   region_id      Yes       String Region of the EIP
    ============== ========= ====== =====================================
 
 Request
