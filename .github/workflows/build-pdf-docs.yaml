@@ -13,7 +13,7 @@ jobs:
           tox-env: pdf-docs
           
       - name: Upload documentation preview
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        if: ${{ success() && github.event.pull_request.head.repo.full_name == github.repository }}
         uses: opentelekomcloud-infra/github-actions/.github/actions/tox-upload-swift@v1
         with:
           docs_path: "doc/build/pdf"
