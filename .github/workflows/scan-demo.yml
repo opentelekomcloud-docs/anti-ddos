@@ -1,0 +1,90 @@
+# Demo: run the gen-sdk-toolset scanner on every pull request and surface
+# what it finds as annotations in the diff. Nothing is persisted anywhere.
+#
+# Put this file at .github/workflows/scan-demo.yml in the documentation repo.
+name: SDK readiness scan (demo)
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install the scanner
+        run: pip install --quiet "git+https://github.com/opentelekomcloud/gen-sdk-toolset@main"
+
+      # The scanner reads the repository through the GitHub API at the pull
+      # request's head commit. The token Actions issues to this run is enough:
+      # it can read this repository, and nothing else is needed.
+      - name: Scan the pull request head
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gen-sdk-scan \
+            --repo "${{ github.repository }}" \
+            --branch "${{ github.event.pull_request.head.sha }}" \
+            --output result.json
+
+      # Turns the scan result into GitHub workflow commands: one annotation per
+      # issue, placed on the file it came from. A document the scanner could
+      # not process at all, or a section it marked failed, fails the check.
+      - name: Report findings
+        run: |
+          python - <<'EOF'
+          import json, sys
+
+          result = json.load(open("result.json", encoding="utf-8"))
+          repo = result["repository"]
+          failed = 0
+          warned = 0
+
+          def annotate(level, path, code, location, details):
+              where = f" ({location})" if location else ""
+              text = f"{code}{where}: {details}" if details else f"{code}{where}"
+              # %0A etc. would be needed for newlines; issues are single-line.
+              print(f"::{level} file={path},title={code}::{text}")
+
+          if result.get("error") or result.get("interruption"):
+              print(f"::error::scan did not complete: {result.get('error') or result['interruption']['message']}")
+              sys.exit(1)
+
+          for doc in repo.get("documents", []):
+              path = doc["path"]
+              scan = doc.get("scan_result") or {}
+              reason = scan.get("failure_reason")
+              if reason:
+                  annotate("error", path, reason["code"], reason.get("location"), reason.get("details"))
+                  failed += 1
+                  continue
+              for section in doc.get("sections", []):
+                  sres = section.get("scan_result") or {}
+                  level = "error" if sres.get("status") == "failed" else "warning"
+                  for issue in sres.get("issues", []):
+                      annotate(level, path, issue["code"],
+                               issue.get("location") or section["name"], issue.get("details"))
+                      if level == "error":
+                          failed += 1
+                      else:
+                          warned += 1
+
+          total = len(repo.get("documents", []))
+          print(f"::notice::{total} documents scanned at {result.get('commit_hash')}: "
+                f"{failed} blocking, {warned} warnings")
+          sys.exit(1 if failed else 0)
+          EOF
+
+      - name: Keep the raw result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-result
+          path: result.json

@@ -15,7 +15,7 @@ URI
 
 -  URI format
 
-   GET /v1/{project_id}/antiddos/{floating_ip_id}/status
+   GET https://antiddos.example.com
 
 -  Parameter description
 
